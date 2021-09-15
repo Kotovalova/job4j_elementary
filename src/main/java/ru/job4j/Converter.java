@@ -6,14 +6,23 @@ public class Converter {
     }
 
     public static float rubleToDollar(float value) {
-        float rsl = value / 60; /* формула перевода рублей в доллары. */
-        return rsl;
+        return  value / 60; /* формула перевода рублей в доллары. */
     }
 
     public static void main(String[] args) {
-        float euro = Converter.rubleToEuro(140);
-        System.out.println("140 rubles are " + euro + " euro.");
-        float dollar = Converter.rubleToDollar(140);
-        System.out.println("140 rubles are " + dollar + " dollar.");
+        float in = 420;
+        float euro = Converter.rubleToEuro(in);
+        System.out.println(in + " rubles are " + euro + " euro.");
+        float expected1 = 6;
+        float out = Converter.rubleToEuro(in);
+        boolean passed = expected1 == out;
+        System.out.println(in + " rubles are 2. Test result : " + passed);
+
+        float dollar = Converter.rubleToDollar(in);
+        System.out.println(in + " rubles are " + dollar + " dollar.");
+        float expected2 = 7;
+        out = Converter.rubleToDollar(in);
+        passed = expected2 == out;
+        System.out.println(in + " rubles are 2. Test result : " + passed);
     }
 }
