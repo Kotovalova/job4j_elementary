@@ -2,7 +2,6 @@ package ru.job4j.condition;
 
 public class PairsCharString {
 
-    @SuppressWarnings("checkstyle:SimplifyBooleanReturn")
     public static boolean check(String l, String r) {
         return (l.trim().length() == 0 && r.trim().length() == 0) || ((l.charAt(0) == r.charAt(r.length() - 1)) && (r.charAt(0) == l.charAt(l.length() - 1)));
     }
