@@ -20,4 +20,12 @@ public class SquareTest {
         int[] expected = new int[] {0, 1, 4, 9, 16};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenBound5Then01491625() {
+        int bound = 6;
+        int[] result = Square.calculate(bound);
+        int[] expected = new int[] {0, 1, 4, 9, 16, 25};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
