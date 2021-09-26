@@ -12,5 +12,7 @@ public class Sequence {
         array[2][0] = 1;
         array[2][1] = 1;
         array[2][2] = 1;
+
+        System.out.println(array[1][1]);
     }
 }
