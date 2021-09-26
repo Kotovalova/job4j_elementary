@@ -56,7 +56,7 @@ public class FindLoopTest {
     public void whenFindNo() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 9;
-        int start = 0;
+        int start = 1;
         int finish = 4;
         int result = FindLoop.indexOf(data, el, start, finish);
         int expected = -1;
