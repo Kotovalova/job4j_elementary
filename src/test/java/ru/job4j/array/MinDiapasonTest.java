@@ -34,14 +34,4 @@ public class MinDiapasonTest {
         int expected = 2;
         Assert.assertEquals(expected, result);
     }
-
-    @Test
-    public void whenBadTest() {
-        int[] array = new int[] {10, 2, 5, 1};
-        int start = -2;
-        int finish = 2;
-        int result = MinDiapason.findMin(array, start, finish);
-        int expected = -1;
-        Assert.assertEquals(expected, result);
-    }
 }
