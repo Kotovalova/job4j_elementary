@@ -3,21 +3,20 @@ package ru.job4j.array;
 public class AlgoArray {
     public static void main(String[] args) {
         int[] array = new int[] {5, 3, 2, 1, 4};
-        int min;
-        int mini = 0;
         int temp;
-        for (int i = 0; i < array.length; i++) {
-            min = array[i];
-            for (int j = i; j < array.length; j++) {
-                if (array[j] < min) {
-                    mini = j;
-                    min = array[j];
-                }
-            }
-            temp = array[i];
-            array[i] = array[mini];
-            array[mini] = temp;
-        }
+        temp = array[0];
+        array[0] = array[3];
+        array[3] = temp;
+
+        /* поменяла 1 и 2 элементы массива */
+        temp = array[1];
+        array[1] = array[2];
+        array[2] = temp;
+
+        /* поменяла 3 и 4 элементы массива */
+        temp = array[3];
+        array[3] = array[4];
+        array[4] = temp;
 
         for (int ar : array) {
             System.out.println(ar);
