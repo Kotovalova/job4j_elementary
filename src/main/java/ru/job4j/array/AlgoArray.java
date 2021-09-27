@@ -7,13 +7,9 @@ public class AlgoArray {
         temp = array[0];
         array[0] = array[3];
         array[3] = temp;
-
-        /* поменяла 1 и 2 элементы массива */
         temp = array[1];
         array[1] = array[2];
         array[2] = temp;
-
-        /* поменяла 3 и 4 элементы массива */
         temp = array[3];
         array[3] = array[4];
         array[4] = temp;
