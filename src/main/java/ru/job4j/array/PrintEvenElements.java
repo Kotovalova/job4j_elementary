@@ -6,7 +6,7 @@ public class PrintEvenElements {
         for (int i = 0; i < numbers.length; i++) {
             if ((numbers.length - 1 - i) % 2 == 0) {
                 System.out.println(
-                        "Текущий элемент массива начиная с последнего: "
+                        "Текущий элемент массива начиная с последнего:  "
                                 + numbers[numbers.length - 1 - i]
                 );
             }
