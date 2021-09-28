@@ -6,7 +6,7 @@ public class Defragment {
             if (array[index] == null) {
                 for (int j = index + 1; j < array.length; j++) {
                     if (array[j] != null) {
-                        array = SwitchArray.swap(array, j, index);
+                        SwitchArray.swap(array, j, index);
                         break;
                     }
                 }
